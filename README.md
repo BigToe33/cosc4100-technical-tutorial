@@ -4,7 +4,7 @@
 
 1. From parent directory run `docker-compose build` 
 
-2. `docker-compose up` to run or `docker-compose up -d` to run in the background
+2. `docker-compose up` to run in current terminal or `docker-compose up -d` to run in the background
 
 3. If there are changes, rebuild with step 1
 
