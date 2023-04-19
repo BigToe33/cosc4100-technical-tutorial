@@ -29,5 +29,5 @@ pip install -r requirements.txt
 (*Note: depends on the python version, you may want to use `source ~/venv/django-docker/bin/activate` instead)
 
      
-2. `cd mysite` and Run `python manage.py runserver`
+2. `cd mysite` and run `python manage.py runserver`
 (*Note: this is a very simple application. Add '/1' to the server path to view the functionality.)
