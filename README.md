@@ -2,8 +2,6 @@
 
 ### How to run using docker-compose:
 
-### How to run using docker-compose:
-
 1. From parent directory run `docker-compose build` 
 
 2. `docker-compose up` to run or `docker-compose up -d` to run in the background
