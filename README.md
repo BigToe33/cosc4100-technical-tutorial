@@ -9,7 +9,7 @@ Requirements:
   - python > 3.7
   - pip
 
-1.
+1. Create a virtual environment & install requirements.txt
 ```python
 python3 -m venv ~/venv/django-docker
 source ~/venv/django-docker/Scripts/activate
