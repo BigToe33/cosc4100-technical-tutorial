@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  web:
+    build:
+      dockerfile: Dockerfile.web
+      context: ./
+
+    restart: unless-stopped
+
+    image: django-app
+    container_name: "django-app"
+
+    env_file: 
+      - .env
+    environment:
+      - SECRET_KEY=${SECRET_KEY}
+      - DJANGO_ALLOWED_HOSTS=${DJANGO_ALLOWED_HOSTS}
+      - APP_PORT=${APP_PORT}
+
+    ports:
+      - ${APP_PORT}:${APP_PORT}
+
+    command: >
+      sh -c "python manage.py makemigrations &&
+      python manage.py migrate &&
+      python manage.py runserver 0.0.0.0:${APP_PORT}"

@@ -2,6 +2,19 @@
 
 ### How to run using docker-compose:
 
+### How to run using docker-compose:
+
+1. From parent directory run `docker-compose build` 
+
+2. `docker-compose up` to run or `docker-compose up -d` to run in the background
+
+3. If there are changes, rebuild with step 1
+
+### Inspecting containers:
+
+Run `docker exec -it django-app /bin/bash` (when the container is running) or `docker run -it django-app /bin/bash` (when the container is stopped). Python code is stored at `/app`
+
+--------------------------------------------
 
 ### How to run without Docker:
 #### Windows:
